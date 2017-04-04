@@ -1,5 +1,5 @@
 #include "Reaper.h"
-#include "ofApp.h"
+
 
 
 
@@ -8,8 +8,12 @@ void Reaper::Killer(vector<Particle> particles) {
 	while (i != particles.end()) {
 		if (i->isAlive())
 		{
-			i = particles.end();
+			i = particles.erase(i);
 		}
-		i++;
+		else
+		{
+			i++; 
+		}
+		
 	}
 }

@@ -9,7 +9,6 @@ class Particle {
         int radius;
         ofVec2f speed;
 		long lifetime;
-		bool isAlive;
 
         ofColor innerColor;
         ofColor outerColor;

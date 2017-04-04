@@ -7,7 +7,7 @@ void Particle::init() {
     radius = ofRandom(10, 50);
     location.x = ofGetWidth() / 2;
     location.y = ofGetHeight() / 2;
-	lifetime = 10;
+	lifetime = 5;
     speed.x = ofRandom(-5, 5);
     speed.y = ofRandom(-5, 5);
 
@@ -27,10 +27,10 @@ void Particle::lifetimer() {
 bool Particle::isAlive() {
 	if (lifetime < 1)
 	{
-		return false;
+		return true;
 	}
 	else {
-		return true;
+		return false;
 	}
 }
 
